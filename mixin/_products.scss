@@ -1,0 +1,64 @@
+.product {
+    &_desc {
+        text-align: center;
+    }
+    &_container {
+        padding: 3rem 0;
+        grid-template-columns: repeat(2, 1.3fr);
+        gap: 2.5rem 3rem;
+    }
+    &_card {
+        display: grid;
+        position: relative;
+        border: 1px solid rgb(248, 246, 246);
+        padding: 6px 5px;
+        &:hover {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+    &_img {
+        position: relative;
+        width: 120px;
+        justify-self: center;
+        margin-bottom: $mb-0-75;
+        transition: .3s;
+    }
+    &_title,
+    &_price {
+        font-size: $small-font-size;
+        font-weight: $font-semi-bold;
+        color: $title-color;
+    }
+    &_button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $first-color;
+        color: #fff;
+        padding: 0.25rem;
+        border-radius: .35rem;
+        font-size: 1.15rem;
+        &:hover {
+            background-color: $first-color-alt;
+        }
+    }
+    &_title {
+        background-image: linear-gradient(to right, #3ee4fa, #fc69fc);
+        // display: inline-block;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-align: center;
+    }
+    // &_circle {
+    //     @include size(90px);
+    //     background-color: $first-color-lighten;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     top: 18%;
+    //     left: 5%;
+    // }
+    &_sub {
+        margin-bottom: 0.5rem;
+    }
+}

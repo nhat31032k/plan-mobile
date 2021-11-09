@@ -1,0 +1,74 @@
+.contact {
+    &_container {
+        row-gap: 3.5rem;
+    }
+    &_data {
+        display: grid;
+        row-gap: 2rem;
+    }
+    &_subtitle {
+        font-size: $normal-font-size;
+        font-weight: $font-medium;
+        color: $text-color;
+        margin-bottom: $mb-0-5;
+    }
+    &_desc {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        color: $title-color;
+        font-weight: $font-medium;
+    }
+    &_icon {
+        font-size: 1.25rem;
+    }
+    &_inputs {
+        display: grid;
+        row-gap: 2rem;
+        margin-bottom: $mb-2-5;
+    }
+    &_content {
+        position: relative;
+        height: 3rem;
+        border-bottom: 1px solid $text-color-light;
+    }
+    &_input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include size(100%);
+        padding: 1rem 1rem 1rem 0;
+        background: none;
+        border: none;
+        outline: none;
+        z-index: 1;
+    }
+    &_label {
+        position: absolute;
+        top: 0.75rem;
+        width: 100%;
+        font-size: $small-font-size;
+        color: $text-color-light;
+        transition: .3s;
+    }
+    &_area {
+        height: 7rem;
+    }
+    &_area textarea {
+        resize: none;
+    }
+    //input focus moveup label
+    &_input:focus+&_label {
+        top: -.75rem;
+        font-size: $smaller-font-size;
+        left: 0;
+        z-index: 10;
+    }
+    //input focus top label
+    &_input:not(:placeholder-shown)>&_input:not(:focus)+&_label {
+        top: -.75rem;
+        font-size: $smaller-font-size;
+        // left: 0;
+        z-index: 10;
+    }
+}

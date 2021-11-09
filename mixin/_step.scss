@@ -1,0 +1,47 @@
+.steps {
+    &_bg {
+        background-color: $first-color;
+        padding: 3rem 2rem 2rem;
+        border-radius: 1rem;
+    }
+    &_container {
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+    &_card {
+        background-color: $container-color;
+        padding: 2.5rem 3rem 2rem 1.5rem;
+        border-radius: 1rem;
+        &-number {
+            display: inline-block;
+            background-color: $first-color-alt;
+            color: #fff;
+            padding: 0.5rem 0.75rem;
+            border-radius: .25rem;
+            font-size: $h2-font-size;
+            margin-bottom: $mb-1-5;
+            transition: 0.3s;
+        }
+        &-title {
+            font-size: $h3-font-size;
+            margin-bottom: $mb-0-5;
+        }
+        &-desc {
+            font-size: $small-font-size;
+        }
+        &:hover>&-number {
+            transform: translateY(-.25rem);
+        }
+    }
+    &_card:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    &_title {
+        background-image: linear-gradient(to left, #47ff50, #4b9afc);
+        // display: inline-block;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-align: center;
+    }
+}

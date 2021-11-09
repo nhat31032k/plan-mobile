@@ -1,0 +1,77 @@
+.footer {
+    // &_input {
+    //     border-radius: 2px;
+    //     outline: none;
+    //     padding: 2rem 5rem;
+    // }
+    // &_cards {
+    //     display: grid;
+    //     grid-template-columns: repeat(4, 1fr);
+    // }
+    &_container {
+        row-gap: 3rem;
+    }
+    &_logo {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        color: $title-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin-bottom: $mb-2-5;
+    }
+    &_logo-icon {
+        font-size: 1.15rem;
+        color: $first-color;
+    }
+    &_subscribe {
+        background-color: $first-color-lighten;
+        padding: .75rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: .5rem;
+        margin-top: 2rem;
+    }
+    &_input {
+        width: 60%;
+        padding: 0 .5rem;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    &_button {
+        padding: 1rem;
+    }
+    &_data {
+        display: grid;
+        row-gap: .75rem;
+    }
+    &_info {
+        font-size: $small-font-size;
+    }
+    &_social {
+        display: inline-flex;
+        column-gap: .75rem;
+    }
+    &_social-link {
+        font-size: 1rem;
+        color: $text-color;
+        transition: .3s;
+    }
+    &_cards {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        margin-top: 1.5rem;
+    }
+    &_card {
+        width: 40px;
+    }
+    &_copy {
+        text-align: center;
+        font-size: $small-font-size;
+        color: $text-color-light;
+        margin-top: 1rem;
+    }
+}
